@@ -1,61 +1,72 @@
 import React from 'react';
 
-import Google from "../Images/Companies/Google.svg";
-import Amazon from "../Images/Companies/Amazon.svg";
-import Group from "../Images/Companies/Group.svg";
-import Uber from "../Images/Companies/Uber.svg";
+import Hero_1 from "../Images/Hero_images/Frame_1.svg";
+import Hero_2 from "../Images/Hero_images/Frame_2.svg";
+import Hero_3 from "../Images/Hero_images/Frame_3.svg";
+import Hero_4 from "../Images/Hero_images/Frame_4.svg";
+import Hero_5 from "../Images/Hero_images/Frame_5.svg";
+import Hero_6 from "../Images/Hero_images/Frame_6.svg";
 
 import Card1 from "../Images/Cards/Frame_1.svg";
 import Card2 from "../Images/Cards/Frame_2.svg";
 import Card3 from "../Images/Cards/Frame_3.svg";
 import Card4 from "../Images/Cards/Frame_4.svg";
+
+import Google from "../Images/Companies/Google.svg";
+import Amazon from "../Images/Companies/Amazon.svg";
+import Group from "../Images/Companies/Group.svg";
+import Uber from "../Images/Companies/Uber.svg";
+
 import ABout from "../Images/About/Frame_5.svg";
 import Quote from "../Images/Quote.svg";
 
-const Home = () => {
-  const  Cards = [
-    {
-    img: Card1,
-    title:'TEAM AXLE',
-    des:'Engineer 360: An assessment platform for Engineers',
-    },
-    {
-    img: Card2,
-    title:'TEAM AXLE',
-    des:'A Stock Analysis Web Application for FinTech',
-    },
-    {
-    img: Card3,
-    title:'TEAM AXLE',
-    des:'Engineer 360: An assessment platform for Engineers',
-    },
-    {
-    img: Card4,
-    title:'TEAM AXLE',
-    des:'Engineer 360: An assessment platform for Engineers',
-    }
+const Home = (props) => {
+  const Cards = [
+     {
+        icon:Card1,
+        title:'TEAM AXLE',
+        des:'Engineer 360: An assessment platform for Engineers',
+      },
+      {
+        icon:Card2,
+        title:'TEAM AXLE',
+        des:'A Stock Analysis Web Application for FinTech',
+      },
+      {
+        icon:Card3,
+        title:'TEAM AXLE',
+        des:'Engineer 360: An assessment platform for Engineers',
+      },
+      {
+        icon:Card4,
+        title:'TEAM AXLE',
+        des:'Engineer 360: An assessment platform for Engineers',
+      }
   ]
+
   return (
     <div className="Home">
 
       {/*===============HERO===============*/}
-    <div className="py-4  md:px-24 px-4">
+    <div className="mt-8 mb-16 grid grid-cols-1 md:grid-cols-3">
 
-      <div className="Hero_image_set_1 ">
+      <div className="Hero_image_set_1 hidden md:flex">
+        <img src={Hero_1} alt="hero" className="absolute mr-4 m-4" />
+        <img src={Hero_2} alt="hero" className="relative mt-40 ml-0 h-1/2 border border-white" />
       </div>
 
-      <div className="Hero_message align-center justify-center w-2/3">
-        <h2 className="md:text-5xl text-4xl font-bold tracking-wide md:leading-tight leading-smug">Get to know about amazing projects buit by
+      <div className="Hero_message align-center justify-center w-full ">
+        <h2 className=" md:text-5xl text-4xl font-bold tracking-wide md:leading-tight leading-smug text-center">Get to know about amazing projects buit by
           <span className="text-[#E7332B]"> HNG Interns </span>over the years
         </h2>
-        <p className="">
+        <p className="m-6">
           Get to know about amazing projects buit by HNG Interns over the years.
           Get to know about amazing projects buit by HNG Interns over the years.
           Get to know about amazing projects buit by HNG Interns over the years
         </p>
 
 
-        <div className="Buttons flex flex-row align-center justify-center">
+        <div className="Buttons flex flex-col px-20 md:px-4 md:py-2 md:w-full md:flex-row justify-center align-center ">
           <button
             href="teams"
             className="border border-[#E7332B] bg-[#E7332B] text-white m-2 p-2 hover:scale-105 shadow-sm font=semi-bold md:text-sm text-xs tracking-wide" >
@@ -69,13 +80,19 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="Hero_image_set_2">
+      <div className="Hero_image_set_2 ml-40 hidden md:flex">
+        <img src={Hero_3} alt="hero" className="absolute ml-4 m-2" />
+        <img src={Hero_4} alt="hero" className="relative mt-40 ml-40 h-1/2 border border-white" />
+      </div>
+      <div className="Hero_image_set_2 ml-40 flex md:hidden mt-8">
+        <img src={Hero_5} alt="hero" className="absolute right-0" />
+        <img src={Hero_6} alt="hero" className="relative mt-40 bottom-4 w-[250vw] h-3/4 right-32" />
       </div>
     </div>
 
       {/*===============ABOUT================*/}
       <section className="Blog">
-      <div className="md:flex flex-row gap-6 md:px-4 md:px-28 items-center">
+      <div className="md:flex flex-row gap-4 md:px-4 md:px-28 items-center m-4">
         <div className="flex-1">
         <p className="text-xs text-[#E7332B]">ABOUT HNG PROJECT</p>
         <h3 className="md:text-4xl font:bold md:leading-smug text-2xl leading-normal w-2/3">
@@ -101,45 +118,51 @@ const Home = () => {
 
       {/*==============PROJECTS================*/}
       <section className="Projects">
-      <div className="align-center justify-center">
-        <p className="text-xs text-[#E7332B]">LASTEST PROJECTS</p>
-        <h3 className="">
+      <div className="text-center align-center justify-center m-16">
+        <p className="text-xs text-[#E7332B] m-2">LASTEST PROJECTS</p>
+        <h3 className="md:text-4xl font:bold font-[600] md:leading-smug text-2xl leading-normal px-44 md:px-72 md:mx-16 m-1">
           Check out the latest projects from HNGi9 teams
         </h3>
-        <p className="text-sm">
+        <p className="text-sm m-2 mx-14 px-28 py-4 md:mx-24 md:px-44 md:py-2">
           Get to know about amazing projects buit by HNG Interns over the years.
           Get to know about amazing projects buit by HNG Interns over the years.
           Get to know about amazing projects buit by HNG Interns over the years
         </p>
 
 
-        <div className="Car">
-          {Cards.map(({cards, id}) => (
-           <div key={id}>
-           <img src= {Cards.img} alt="img" className="h-16"/>
-           <h1 className="font-semi-bold text-gray-300 text-sm my-3">{Cards.title}</h1>
-           <p className="text-lg leading-relaxed text-black">{Cards.des}</p>
-           <button className="text-sm">View Team Axle >></button>
-           </div>
-        ))}
+        <div className="card">
+        {Cards.map ((cards, i) => (
+            <div key={i}>
+              <img src={cards.icon} alt="projects" />
+              <h1 className="font-semi-bold text-gray-300 text-sm my-3">{props.title}</h1>
+              <p className="text-lg leading-relaxed text-black">{props.des}</p>
+              <button className="text-sm">View Team Axle >></button>
+            </div>
+          ))
+        }
+
         </div>
+
 
         <div>
         <button
           href="more"
-          className="text-[#E7332B]  border border-[#E7332B] hover:bg-[#E7332B] hover:text-white bg-white m-2 p-2 " >
+          className="text-[#E7332B]  border border-[#E7332B] hover:bg-[#E7332B] hover:text-white bg-white m-2 p-2 mb-4" >
           View More
         </button>
         </div>
       </div>
+
       </section>
 
+      {/*================QUOTES================*/}
       <section className="Quote">
-      <div className= " text-center bg-[#007BFF] h-[40vh] align-center justify-center">
+      <div className= "p-12 text-center text-white font-medium bg-[#007BFF] h-[50vh] align-center justify-center">
         <img src={Quote} alt="quote" className="p-2 w-full h-10 text-center align-center justify-center" />
-        <p className="p-4">Amazing Quoyte from the founder to entice people and give personal experience on his own experince.
+        <p className="p-4 px-32 md:px-72 md:py-8">Amazing Quoyte from the founder to entice people and give personal experience on his own experince.
           Amazing Quoyte from the founder to entice people and give personal experience on his own experince.
         </p>
+        <span className="text-sm text-center">Mark Mark</span>
       </div>
       </section>
 
@@ -147,34 +170,27 @@ const Home = () => {
       <div className=" text-center Partners bg-[#F9FBFF] align-center justify-center">
         <section className="Partners">
         <p className="pt-32 text-xs text-[#E7332B]">OUR PATNERS</p>
-        <div className="flex justify-center flex-wrap md:w-4/5 my-16 mx-auto gap-x-20 md:gap-y-12 gap-y-8">
+        <div className="flex justify-center flex-wrap md:w-4/5 my-16 mx-auto gap-x-20 md:gap-y-12 gap-y-8 mb-32">
         <img
           src={Uber} alt="logo"
-          className="h-14"
           />
         <img
          src={Group} alt="logo"
-          className="h-14"
           />
         <img
          src={Google} alt="logo"
-          className="h-14"
           />
         <img
           src={Amazon} alt="logo"
-          className="h-14"
           />
         <img
           src={Amazon} alt="logo"
-          className="h-14"
           />
         <img
           src={Uber} alt="logo"
-          className="h-14"
           />
         <img
           src={Group} alt="logo"
-          className="h-14"
           />
         </div>
         </section>
