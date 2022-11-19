@@ -10,7 +10,7 @@ const Footer = () => {
   return (
     <div className="Footer">
 
-      <div className="p-4 bg-white sm:p-6 dark:bg-gray-900">
+      <div className="p-4 bg-white sm:p-6">
         <div className="md:flex sm:pl-4 md:pl-16">
           <div className="justify-between flex md:hidden mb-6 ">
               <div className="pl-4 w-[80px]">
