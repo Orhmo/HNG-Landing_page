@@ -24,7 +24,7 @@ const Home = (props) => {
   const Cards = [
      {
         icon:Card1,
-        title:'TEAM AXLE',
+        title:"TEAM AXLE",
         des:'Engineer 360: An assessment platform for Engineers',
       },
       {
@@ -129,18 +129,32 @@ const Home = (props) => {
           Get to know about amazing projects buit by HNG Interns over the years
         </p>
 
-
-        <div className="card">
+        <div className="mt-40">
+        <div className="card grid grid-cols-1 md:grid-cols-4 md:-mt-48 gap-10 md:p-14 p-10 mt-5 rounded-md justify-center align-center text-center">
         {Cards.map ((cards, i) => (
             <div key={i}>
-              <img src={cards.icon} alt="projects" />
-              <h1 className="font-semi-bold text-gray-300 text-sm my-3">{props.title}</h1>
-              <p className="text-lg leading-relaxed text-black">{props.des}</p>
-              <button className="text-sm">View Team Axle >></button>
+              <img src={cards.icon} alt="projects" className="justify-center align-center"/>
+              <h1 className="font-semi-bold text-gray-300 text-sm my-3">{cards.title}</h1>
+              <p className="text-lg leading-relaxed text-black">{cards.des}</p>
+              <button className="text-xs text-[#007BFF]">View Team Axle >></button>
             </div>
           ))
         }
+        </div>
+        </div>
 
+        <div className=" hidden md:flex mt-40">
+        <div className="card grid grid-cols-4 md:-mt-48 gap-10 md:p-14 p-10 mt-5 rounded-md justify-center align-center text-center">
+        {Cards.map ((cards, i) => (
+            <div key={i}>
+              <img src={cards.icon} alt="projects" className="justify-center align-center"/>
+              <h1 className="font-semi-bold text-gray-300 text-sm my-3">{cards.title}</h1>
+              <p className="text-lg leading-relaxed text-black">{cards.des}</p>
+              <button className="text-xs text-[#007BFF]">View Team Axle >></button>
+            </div>
+          ))
+        }
+        </div>
         </div>
 
 
