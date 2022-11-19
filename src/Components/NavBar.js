@@ -51,7 +51,7 @@ const NavBar = () => {
         <NavLink to="/">Home</NavLink>
       </li>
       <li className="hover:text-red-600 flex flex-rows">
-        <NavLink to="/Teams">Teams></NavLink>
+        <NavLink to="/Teams">Teams</NavLink>
       </li>
       <li className="hover:text-red-600">
         <NavLink to="/FAQs">FAQs</NavLink>

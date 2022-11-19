@@ -56,7 +56,7 @@ const Home = (props) => {
       </div>
 
       <div className="Hero_message align-center justify-center w-full ">
-        <h2 className=" md:text-5xl text-4xl font-bold tracking-wide md:leading-tight leading-smug text-center">Get to know about amazing projects buit by
+        <h2 className=" md:text-5xl text-4xl font-bold tracking-wide md:leading-tight leading-smug text-center">Get to know about amazing projects built by
           <span className="text-[#E7332B]"> HNG Interns </span>over the years
         </h2>
         <p className="m-6">
@@ -105,13 +105,13 @@ const Home = (props) => {
         <br />
           Get to know about amazing projects buit by HNG Interns over the years. Get to know about amazing projects buit.
         </p>
-        <span className="text-[#007BFF] text-xs">Join Waitlist >></span>
+        <span className="text-[#007BFF] text-xs mb-2">Join Waitlist >></span>
         </div>
         <div className="flex-1">
           <img
             src={ABout}
             alt="img"
-            className="md:h-[300px] h-full object-cover w-full"/>
+            className="md:h-[300px] h-full object-cover w-full mt-8"/>
         </div>
       </div>
       </section>
@@ -120,16 +120,16 @@ const Home = (props) => {
       <section className="Projects">
       <div className="text-center align-center justify-center m-16">
         <p className="text-xs text-[#E7332B] m-2">LASTEST PROJECTS</p>
-        <h3 className="md:text-4xl font:bold font-[600] md:leading-smug text-2xl leading-normal px-44 md:px-72 md:mx-16 m-1">
+        <h3 className="md:text-4xl font:bold font-[600] md:leading-smug text-2xl leading-normal px-4 md:px-72 md:mx-16 m-1 text-center">
           Check out the latest projects from HNGi9 teams
         </h3>
-        <p className="text-sm m-2 mx-14 px-28 py-4 md:mx-24 md:px-44 md:py-2">
+        <p className="text-sm text-center m-2 mx-4 px-2 py-2 md:mx-24 md:px-44 md:py-2">
           Get to know about amazing projects buit by HNG Interns over the years.
           Get to know about amazing projects buit by HNG Interns over the years.
           Get to know about amazing projects buit by HNG Interns over the years
         </p>
 
-        <div className="mt-40">
+        <div className="mt-4 md:mt-40 flex-flex-wrap">
         <div className="card grid grid-cols-1 md:grid-cols-4 md:-mt-48 gap-10 md:p-14 p-10 mt-5 rounded-md justify-center align-center text-center">
         {Cards.map ((cards, i) => (
             <div key={i}>
@@ -171,9 +171,9 @@ const Home = (props) => {
 
       {/*================QUOTES================*/}
       <section className="Quote">
-      <div className= "p-12 text-center text-white font-medium bg-[#007BFF] h-[50vh] align-center justify-center">
+      <div className= "p-12 text-center text-white font-medium bg-[#007BFF] h-fit align-center justify-center">
         <img src={Quote} alt="quote" className="p-2 w-full h-10 text-center align-center justify-center" />
-        <p className="p-4 px-32 md:px-72 md:py-8">Amazing Quoyte from the founder to entice people and give personal experience on his own experince.
+        <p className="p-4 px-4 md:px-72 md:py-8">Amazing Quoyte from the founder to entice people and give personal experience on his own experince.
           Amazing Quoyte from the founder to entice people and give personal experience on his own experince.
         </p>
         <span className="text-sm text-center">Mark Mark</span>
@@ -212,7 +212,7 @@ const Home = (props) => {
         <section className="Newsletters">
         <div className="m-12 bg-[#1E2532] h-1/2 align-center justify-center">
           <p className=" p-8 text-xs text-[#E7332B]">OUR PATNERS</p>
-          <h3 className="text-white w-fit md:text-3xl text-xl m-2 md:mx-32 mx-6 md:px-64 md:py-4 px-40 py-4 ">Get the Latest News on Scholarships Around The World.</h3>
+          <h3 className="text-white w-fit md:text-3xl text-xl m-2 md:mx-32 mx-6 md:px-64 md:py-4 px-4 py-4 ">Get the Latest News on Scholarships Around The World.</h3>
 
         <form className="pb-4">
           <input
