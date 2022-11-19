@@ -9,7 +9,7 @@ const NavBar = () => {
   const [nav, setNav] = useState(false);
 
   return (
-    <div className="NavBar flex justify-between py-4 px-24 px-4">
+    <div className="NavBar flex justify-between py-4 px-24 px-4 mt-8">
     <div className="">{/*--nav begin*/}
     <img
       src={HNG}
@@ -39,19 +39,19 @@ const NavBar = () => {
     {/*============Hamburger Menu============*/}
     <div
       onClick={() => setNav(!nav)}
-      className="cursor-pointer text-black md:hidden z-50 "
+      className="cursor-pointer relative text-black md:hidden z-50 mt-2"
       >
-      {nav ? <FaTimes size={20} /> : <FaBars size={20}/>}
+      {nav ? <FaTimes size={20} /> : <FaBars size={20} />}
     </div>
 
     {nav && (
       <ul
-      className={"md:hidden lg:hidden flex flex-col align-center justify-center top-0 z-50 bg-white w-2/3 h-screen shadow-2xl gap-10 text-medium p-7 pt-20 right-0 duration-500"}>
+      className={"md:hidden absolute lg:hidden flex flex-col align-center justify-center top-[15%] z-50 bg-white w-2/3 h-1/2 shadow-2xl gap-10 text-medium p-7 pt-20 right-0 duration-500"}>
       <li className="hover:text-red-600 ">
         <NavLink to="/">Home</NavLink>
       </li>
       <li className="hover:text-red-600 flex flex-rows">
-        <NavLink to="/Teams">Teams</NavLink>
+        <NavLink to="/Teams">Teams></NavLink>
       </li>
       <li className="hover:text-red-600">
         <NavLink to="/FAQs">FAQs</NavLink>
