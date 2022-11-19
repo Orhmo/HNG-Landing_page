@@ -133,10 +133,10 @@ const Home = (props) => {
         <div className="card grid grid-cols-1 md:grid-cols-4 md:-mt-48 gap-10 md:p-14 p-10 mt-5 rounded-md justify-center align-center text-center">
         {Cards.map ((cards, i) => (
             <div key={i}>
-              <img src={cards.icon} alt="projects" className="justify-center align-center"/>
+              <img src={cards.icon} alt="projects" className="justify-center align-center hover:scale-105"/>
               <h1 className="font-semi-bold text-gray-300 text-sm my-3">{cards.title}</h1>
               <p className="text-lg leading-relaxed text-black">{cards.des}</p>
-              <button className="text-xs text-[#007BFF]">View Team Axle >></button>
+              <button className="text-xs text-[#007BFF] hover:scale-105">View Team Axle >></button>
             </div>
           ))
         }
@@ -147,10 +147,10 @@ const Home = (props) => {
         <div className="card grid grid-cols-4 md:-mt-48 gap-10 md:p-14 p-10 mt-5 rounded-md justify-center align-center text-center">
         {Cards.map ((cards, i) => (
             <div key={i}>
-              <img src={cards.icon} alt="projects" className="justify-center align-center"/>
+              <img src={cards.icon} alt="projects" className="justify-center align-center hover:scale-105"/>
               <h1 className="font-semi-bold text-gray-300 text-sm my-3">{cards.title}</h1>
               <p className="text-lg leading-relaxed text-black">{cards.des}</p>
-              <button className="text-xs text-[#007BFF]">View Team Axle >></button>
+              <button className="text-xs text-[#007BFF] hover:scale-105">View Team Axle >></button>
             </div>
           ))
         }
