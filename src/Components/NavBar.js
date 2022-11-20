@@ -1,11 +1,14 @@
 import React, { useState } from 'react';
 import { FaBars, FaTimes } from "react-icons/fa";
-import { NavLink } from "react-router-dom";
+import { NavLink, withRouter } from "react-router-dom";
+import { AiOutlineCaretDown } from "react-icons/ai";
 
 import HNG from '../Images/Logo/Logo.svg';
 
 import Search from './Search.js';
 const NavBar = () => {
+  const activeLink = "text-[#E7332B]";
+  const normalLink= " ";
   const [nav, setNav] = useState(false);
 
   return (
@@ -19,18 +22,30 @@ const NavBar = () => {
 
    {/* ==========Navigation============ */}
    <div>
-    <ul className="hidden md:flex cursor-pointer text-black text-lg text-center gap-8 mt-2">
-      <li className="hover:text-red-600">
-        <NavLink to="/">Home</NavLink>
+    <ul className="hidden md:flex cursor-pointer active:text-[#E7332B] text-black text-lg text-center gap-8 mt-2">
+      <li className="hover:text-red-600 ">
+        <NavLink to="/"
+          className={({ isActive }) =>
+          isActive ?
+          activeLink:normalLink}>Home</NavLink>
       </li>
       <li className="hover:text-red-600 ">
-        <NavLink to="/Teams">Teams</NavLink>
+        <NavLink to="/Teams"
+        className={({ isActive }) =>
+        isActive ?
+        activeLink:normalLink}>Teams</NavLink>
       </li>
       <li className="hover:text-red-600">
-        <NavLink to="/FAQs">FAQs</NavLink>
+        <NavLink to="/FAQs"
+        className={({ isActive }) =>
+        isActive ?
+        activeLink:normalLink}>FAQs</NavLink>
       </li>
       <li className="hover:text-red-600">
-        <NavLink to="/About_HNG">AboutHNG</NavLink>
+        <NavLink to="/About_HNG"
+        className={({ isActive }) =>
+        isActive ?
+        activeLink:normalLink}>AboutHNG</NavLink>
       </li>
     </ul>
     </div> {/*--nav ends*/}
@@ -51,16 +66,28 @@ const NavBar = () => {
       <ul
       className={"md:hidden absolute lg:hidden flex flex-col align-center justify-center top-[15%] z-50 bg-white w-2/3 h-1/2 shadow-2xl gap-10 text-medium p-7 pt-20 right-0 duration-500"}>
       <li className="hover:text-red-600 ">
-        <NavLink to="/">Home</NavLink>
+        <NavLink to="/"
+        className={({ isActive }) =>
+        isActive ?
+        activeLink:normalLink}>Home</NavLink>
+      </li>
+      <li className="hover:text-red-600 flex flex-row">
+        <NavLink to="/Teams"
+        className={({ isActive }) =>
+        isActive ?
+        activeLink:normalLink}>Teams <AiOutlineCaretDown /> </NavLink>
       </li>
       <li className="hover:text-red-600">
-        <NavLink to="/Teams">Teams </NavLink>
+        <NavLink to="/FAQs"
+        className={({ isActive }) =>
+        isActive ?
+        activeLink:normalLink}>FAQs</NavLink>
       </li>
       <li className="hover:text-red-600">
-        <NavLink to="/FAQs">FAQs</NavLink>
-      </li>
-      <li className="hover:text-red-600">
-        <NavLink to="/About_HNG">AboutHNG</NavLink>
+        <NavLink to="/About_HNG"
+        className={({ isActive }) =>
+        isActive ?
+        activeLink:normalLink}>AboutHNG</NavLink>
       </li>
       </ul>
 

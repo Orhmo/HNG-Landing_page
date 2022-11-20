@@ -44,7 +44,7 @@ const Search = () => {
       <input
         type="text"
         id="header-search"
-        className="text-xs w-full border border-white"
+        className="text-xs w-full border focus:border-white"
         onChange={handleChange}
         value={searchInput}
         placeholder="Search about HNG teams and mentors"

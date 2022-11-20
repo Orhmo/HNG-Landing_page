@@ -106,12 +106,12 @@ const Home = (props) => {
         <div className="Buttons flex flex-col px-20 md:px-4 md:py-2 md:w-full md:flex-row justify-center align-center ">
           <button
             href="teams"
-            className="border border-[#E7332B] bg-[#E7332B] text-white m-4 p-4 px-8 hover:scale-105 shadow-sm font=semi-bold md:text-sm text-xs tracking-wide" >
+            className="border border-[#E7332B] bg-[#E7332B]  text-white m-4 p-4 px-8 hover:scale-105 hover:bg-white hover:text-[#E7332B] shadow-sm font=semi-bold md:text-sm text-xs tracking-wide" >
             Join waitlist
           </button>
           <button
             href="teams"
-            className="border border-[#E7332B] bg-transparent text-[#E7332B] m-4 p-4 hover:scale-105 shadow-sm font=semi-bold md:text-sm text-xs tracking-wide" >
+            className="border border-[#E7332B] bg-transparent text-[#E7332B] m-4 p-4 hover:scale-105 hover:bg-[#E7332B] hover:text-white shadow-sm font=semi-bold md:text-sm text-xs tracking-wide" >
             View Previous Projects
           </button>
         </div>
