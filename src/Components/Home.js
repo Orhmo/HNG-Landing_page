@@ -129,7 +129,7 @@ const Home = (props) => {
 
       {/*===============ABOUT================*/}
       <section className="Blog">
-      <div className="mr-4 md:flex flex-row md:px-4 md:px-28 items-center m-2 mb-32">
+      <div className="mr-2 md:flex flex-row md:px-4 md:px-28 items-center m-2 mb-32">
         <div className="flex-1">
         <p className="text-xs text-[#E7332B]">ABOUT HNG PROJECT</p>
         <h3 className="md:text-4xl font:bold md:leading-smug text-2xl leading-normal w-2/3">

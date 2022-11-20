@@ -27,8 +27,7 @@ const Search = () => {
   };
   if (searchInput.length > 0) {
     teams.filter((team) => {
-      return
-      team.name.match(searchInput);
+      return team.name.match(searchInput);
     });
   }
   return (
@@ -50,6 +49,20 @@ const Search = () => {
         value={searchInput}
         placeholder="Search about HNG teams and mentors"
       />
+      <table>
+        <tr>
+          <th>Team</th>
+        </tr>
+        {teams.map((team, i) => {
+          return(
+          <div>
+            <tr>
+              <td>{team.name}</td>
+              </tr>
+          </div>
+        )
+        })}
+      </table>
       </div>
 
       <div className="flex md:hidden">
