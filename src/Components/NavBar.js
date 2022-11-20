@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { FaBars, FaTimes } from "react-icons/fa";
+import { FaAngleDown, FaBars, FaTimes } from "react-icons/fa";
 import { NavLink } from "react-router-dom";
 
 import HNG from '../Images/Logo/Logo.svg';
@@ -50,8 +50,8 @@ const NavBar = () => {
       <li className="hover:text-red-600 ">
         <NavLink to="/">Home</NavLink>
       </li>
-      <li className="hover:text-red-600 flex flex-rows">
-        <NavLink to="/Teams">Teams></NavLink>
+      <li className="hover:text-red-600">
+        <NavLink to="/Teams">Teams <FaAngleDown className="" /></NavLink>
       </li>
       <li className="hover:text-red-600">
         <NavLink to="/FAQs">FAQs</NavLink>
