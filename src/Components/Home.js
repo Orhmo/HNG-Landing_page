@@ -135,11 +135,11 @@ const Home = (props) => {
         <h3 className="md:text-4xl font:bold md:leading-smug text-2xl leading-normal w-2/3">
           Know more about HNG Internship Epi. 9
         </h3>
-        <p className="text-sm md:text-base text-grey-600 w-2/3 md:w-[470px] leading-relaxed py-5">
+        <p className="text-sm md:text-base text-grey-600 w-[320px] md:w-[470px] leading-relaxed py-5">
         The Internship is designed to surface the very best of candidates out of a large pool of participants.
         It is fast paced and challenging, and helps people learn how to work in teams, deal with pressure and quickly expand their knowledge.
         </p>
-        <p className="text-sm md:text-base text-grey-600 w-2/3 md:w-[480px] leading-relaxed py-5 mt-2">
+        <p className="text-sm md:text-base text-grey-600 w-[320px] md:w-[480px] leading-relaxed py-5 mt-2">
         Anybody can apply. The Internship itself focuses on participants with prior experience either by going through the training phase,
         or self learning. However, if you have no prior experience, we still encourage you to apply you'll learn a lot from the experience.
         </p>
