@@ -49,7 +49,7 @@ const Search = () => {
         value={searchInput}
         placeholder="Search about HNG teams and mentors"
       />
-      <table>
+      <table className="hidden">
         <tr>
           <th>Team</th>
         </tr>
