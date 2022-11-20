@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { FaBars, FaTimes } from "react-icons/fa";
-import { NavLink, withRouter } from "react-router-dom";
-import { AiOutlineCaretDown } from "react-icons/ai";
+import { NavLink } from "react-router-dom";
 
 import HNG from '../Images/Logo/Logo.svg';
 
@@ -75,7 +74,7 @@ const NavBar = () => {
         <NavLink to="/Teams"
         className={({ isActive }) =>
         isActive ?
-        activeLink:normalLink}>Teams <AiOutlineCaretDown /> </NavLink>
+        activeLink:normalLink}>Teams </NavLink>
       </li>
       <li className="hover:text-red-600">
         <NavLink to="/FAQs"
