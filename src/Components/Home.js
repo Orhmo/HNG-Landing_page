@@ -158,10 +158,10 @@ const Home = (props) => {
       <section className="Projects">
       <div className="text-center align-center justify-center m-16">
         <p className="text-xs text-[#E7332B] m-2">LASTEST PROJECTS</p>
-        <h3 className="md:text-4xl font:bold font-[600] md:leading-smug text-2xl leading-normal px-4 md:px-72 md:mx-16 m-1 text-center">
+        <h3 className="md:text-4xl font:bold font-[600] md:leading-smug text-2xl leading-normal px-4 md:mx-32 lg:px-72 lg:mx-16 m-1 text-center">
           Check out the latest projects from HNGi9 teams
         </h3>
-        <p className="text-sm text-center m-2 mx-4 px-2 py-2 md:mx-24 md:px-44 md:py-2">
+        <p className="text-sm text-center m-2 mx-4 px-2 py-2 md:mx-16 md:px-8 lg:mx-24 lg:px-44 lg:py-2">
           Get to know about amazing projects buit by HNG Interns over the years.
           These products have been made live and solve various challenges users have.
        </p>
