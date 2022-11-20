@@ -13,6 +13,11 @@ import Card2 from "../Images/Cards/Frame_2.svg";
 import Card3 from "../Images/Cards/Frame_3.svg";
 import Card4 from "../Images/Cards/Frame_4.svg";
 
+import Card5 from "../Images/Cards/Frame_5.svg";
+import Card6 from "../Images/Cards/Frame_6.svg";
+import Card7 from "../Images/Cards/Frame_7.svg";
+import Card8 from "../Images/Cards/Frame_8.svg";
+
 import Google from "../Images/Companies/Google.svg";
 import Amazon from "../Images/Companies/Amazon.svg";
 import Group from "../Images/Companies/Group.svg";
@@ -25,23 +30,55 @@ const Home = (props) => {
   const Cards = [
      {
         icon:Card1,
-        title:'TEAM AXLE',
-        des:'Engineer 360: An assessment platform for Engineers',
+        title:'TEAM BRAINBOX',
+        des:'Scrybe: World class Transcription and Sentiment Analysis for yor Business',
+        btn: 'View Team Brainbox >>',
       },
       {
         icon:Card2,
-        title:'TEAM AXLE',
-        des:'A Stock Analysis Web Application for FinTech',
+        title:'TEAM BOOT',
+        des:'Kitchen Diary: The Best Platform To Get Your Customized Recipe Card',
+        btn:'View Team Boot >>',
       },
       {
         icon:Card3,
-        title:'TEAM AXLE',
-        des:'Engineer 360: An assessment platform for Engineers',
+        title:'TEAM TAPE',
+        des:'Noxus: Generate Eye catchy images with just your words',
+        btn:'View Team Tape >>',
+
       },
       {
         icon:Card4,
-        title:'TEAM AXLE',
+        title:'TEAM GRIT',
         des:'Engineer 360: An assessment platform for Engineers',
+        btn:'View Team Grit >>',
+      }
+  ]
+
+  const Extras = [
+     {
+        icon:Card5,
+        title:'TEAM CLUTCH',
+        des:'Voxclips: Convert Your Podcasts Audio Into Video with Heads that talk.',
+        btn:'View Team Clutch >>',
+      },
+      {
+        icon:Card6,
+        title:'TEAM AXE',
+        des:'AxeAPI: Let’s Identify your VIP’s And Convert Them To Sales',
+        btn:'View Team Axe >>',
+      },
+      {
+        icon:Card7,
+        title:'TEAM ENGINE',
+        des:'LoveMe: Instantly create your deepest feelings with our AI generated letters.',
+        btn:'View Team Engine >>',
+      },
+      {
+        icon:Card8,
+        title:'TEAM RULER',
+        des:'Minegram: Torzilla offers a simple API that delivers to you structured texts for your images anywhere',
+        btn:'View Team Ruler >>'
       }
   ]
 
@@ -134,9 +171,11 @@ const Home = (props) => {
         {Cards.map ((cards, i) => (
             <div key={i}>
               <img src={cards.icon} alt="projects" className="justify-center align-center hover:scale-105"/>
+              <div className="align-left text-left">
               <h1 className="font-semi-bold text-gray-300 text-sm my-3">{cards.title}</h1>
               <p className="text-lg leading-relaxed text-black">{cards.des}</p>
-              <button className="text-xs text-[#007BFF] hover:scale-105">View Team Axle >></button>
+              <button className="text-xs text-[#007BFF] hover:scale-105">{cards.title}</button>
+            </div>
             </div>
           ))
         }
@@ -145,12 +184,14 @@ const Home = (props) => {
 
         <div className=" hidden md:flex mt-40">
         <div className="card grid grid-cols-4 md:-mt-48 gap-10 md:p-14 p-10 mt-5 rounded-md justify-center align-center text-center">
-        {Cards.map ((cards, i) => (
+        {Extras.map ((extras, i) => (
             <div key={i}>
-              <img src={cards.icon} alt="projects" className="justify-center align-center left-16 hover:scale-105"/>
-              <h1 className="font-semi-bold text-gray-300 text-sm my-3">{cards.title}</h1>
-              <p className="text-lg leading-relaxed text-black">{cards.des}</p>
-              <button className="text-xs text-[#007BFF] hover:scale-105">View Team Axle >></button>
+              <img src={extras.icon} alt="projects" className="justify-center align-center left-16 hover:scale-105"/>
+              <div className="align-left text-left">
+              <h1 className="font-semi-bold text-gray-300 text-sm my-3">{extras.title}</h1>
+              <p className="text-lg leading-relaxed text-black">{extras.des}</p>
+              <button className="text-xs text-[#007BFF] hover:scale-105">{extras.btn}</button>
+            </div>
             </div>
           ))
         }
