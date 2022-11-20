@@ -174,7 +174,7 @@ const Home = (props) => {
               <div className="align-left text-left">
               <h1 className="font-semi-bold text-gray-300 text-sm my-3">{cards.title}</h1>
               <p className="text-lg leading-relaxed text-black">{cards.des}</p>
-              <button className="text-xs text-[#007BFF] hover:scale-105">{cards.title}</button>
+              <button className="text-xs text-[#007BFF] hover:scale-105">{cards.btn}</button>
             </div>
             </div>
           ))
