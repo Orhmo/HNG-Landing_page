@@ -97,7 +97,7 @@ const Home = (props) => {
         <h2 className="text-3xl md:text-4xl md:w-[45vw] font-bold trackimg-wide md:leading-tight leading-smug text-center">Get to know about amazing projects built by
           <span className="text-[#E7332B]"> HNG Interns </span>over the years
         </h2>
-        <p className="m-4  md:w-[48vw] tracking-wide text-center">
+        <p className="m-4 md:w-[48vw] tracking-wide text-center">
           HNG internship is an annual internship where interns are trained on various task at a very fast pace.
           There have been 8 completed editions with over 1000+ finalist.
         </p>
@@ -129,17 +129,17 @@ const Home = (props) => {
 
       {/*===============ABOUT================*/}
       <section className="Blog">
-      <div className="md:flex flex-row md:px-4 md:px-28 items-center m-2 mb-32">
+      <div className="mr-4 md:flex flex-row md:px-4 md:px-28 items-center m-2 mb-32">
         <div className="flex-1">
         <p className="text-xs text-[#E7332B]">ABOUT HNG PROJECT</p>
         <h3 className="md:text-4xl font:bold md:leading-smug text-2xl leading-normal w-2/3">
           Know more about HNG Internship Epi. 9
         </h3>
-        <p className="text-base text-grey-600 md:w-[470px] leading-relaxed py-5">
+        <p className="text-sm md:text-base text-grey-600 w-2/3 md:w-[470px] leading-relaxed py-5">
         The Internship is designed to surface the very best of candidates out of a large pool of participants.
         It is fast paced and challenging, and helps people learn how to work in teams, deal with pressure and quickly expand their knowledge.
         </p>
-        <p className="text-base text-grey-600 md:w-[480px] leading-relaxed py-5 mt-2">
+        <p className="text-sm md:text-base text-grey-600 w-2/3 md:w-[480px] leading-relaxed py-5 mt-2">
         Anybody can apply. The Internship itself focuses on participants with prior experience either by going through the training phase,
         or self learning. However, if you have no prior experience, we still encourage you to apply you'll learn a lot from the experience.
         </p>
@@ -173,7 +173,7 @@ const Home = (props) => {
               <img src={cards.icon} alt="projects" className="justify-center align-center hover:scale-105"/>
               <div className="align-left text-left">
               <h1 className="font-semi-bold text-gray-300 text-sm my-3">{cards.title}</h1>
-              <p className="text-lg leading-relaxed text-black">{cards.des}</p>
+              <p className="text-lg leading-relaxed">{cards.des}</p>
               <button className="text-xs text-[#007BFF] hover:scale-105">{cards.btn}</button>
             </div>
             </div>
@@ -189,7 +189,7 @@ const Home = (props) => {
               <img src={extras.icon} alt="projects" className="justify-center align-center left-16 hover:scale-105"/>
               <div className="align-left text-left">
               <h1 className="font-semi-bold text-gray-300 text-sm my-3">{extras.title}</h1>
-              <p className="text-lg leading-relaxed text-black">{extras.des}</p>
+              <p className="text-sm md:text-lg leading-relaxed">{extras.des}</p>
               <button className="text-xs text-[#007BFF] hover:scale-105">{extras.btn}</button>
             </div>
             </div>
@@ -214,7 +214,7 @@ const Home = (props) => {
       <section className="Quote">
       <div className= "p-12 text-center text-white font-medium bg-[#007BFF] h-fit align-center justify-center">
         <img src={Quote} alt="quote" className="p-2 w-full h-10 text-center align-center justify-center" />
-        <p className="text-3xl p-4 px-4 md:px-16 md:py-8">
+        <p className="text-lg md:text-3xl p-4 px-4 md:px-16 md:py-8">
         “HNG internships brings out the best of every intern we have. They are trained to design, build and develop softwares in weeks.
         I am always impressed with the quality of work I get yearly.”
         </p>

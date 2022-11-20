@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 
 import HNG from '../Images/Logo/Logo.svg';
 
-
+import Search from './Search.js';
 const NavBar = () => {
   const [nav, setNav] = useState(false);
 
@@ -19,7 +19,7 @@ const NavBar = () => {
 
    {/* ==========Navigation============ */}
    <div>
-    <ul className="  hidden md:flex cursor-pointer text-black text-sm text-center gap-8">
+    <ul className="hidden md:flex cursor-pointer text-black text-lg text-center gap-8 mt-2">
       <li className="hover:text-red-600">
         <NavLink to="/">Home</NavLink>
       </li>
@@ -33,8 +33,11 @@ const NavBar = () => {
         <NavLink to="/About_HNG">AboutHNG</NavLink>
       </li>
     </ul>
-
     </div> {/*--nav ends*/}
+
+    <div className="">
+      <Search />
+    </div>
 
     {/*============Hamburger Menu============*/}
     <div
